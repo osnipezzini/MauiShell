@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:pages="clr-namespace:MauiShell.Pages"
+       FlyoutBehavior="{OnIdiom Default=Locked, Phone=Flyout}"
+       x:Class="MauiShell.AppShell">
+
+    <TabBar>
+        <ShellContent Route="MainPage" ContentTemplate="{DataTemplate pages:MainPage}" />
+    </TabBar>
+
+    <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
+    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnLogoutClicked">
+    </MenuItem>
+
+</Shell>
